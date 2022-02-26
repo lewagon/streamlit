@@ -59,7 +59,7 @@ def run():
 
         folium_static(m)
 
-    st.write('# Full width folium map')
+    st.write('# Full width map')
 
     # not possible to demo this without setting the full site in wide mode
 
