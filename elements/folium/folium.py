@@ -58,3 +58,28 @@ def run():
         ).add_to(m)
 
         folium_static(m)
+
+    st.write('# Full width map')
+
+    # not possible to demo this without setting the full site in wide mode
+
+    st.code("""
+st.set_page_config(
+    page_title="Folium Map",
+    page_icon="🍁",
+    layout="wide",
+    initial_sidebar_state="collapsed")
+
+CSS = \"\"\"
+iframe {
+    width: 100%;
+    height: 700px;
+}
+\"\"\"
+
+st.write(f'<style>{CSS}</style>', unsafe_allow_html=True)
+        """)
+
+    from PIL import Image
+    image = Image.open('images/wide-folium.png')
+    st.image(image, caption='Wide Folium Map')
