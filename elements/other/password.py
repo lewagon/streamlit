@@ -12,4 +12,4 @@ def run():
 
     st.write('A simple solution to protect your app without having to manage a database or user accounts is to use a password. In order to do so, you need to load the password from an environment variable and match it to the user input')
 
-    st.write('Here is a [demo repo](https://github.com/gmanchon/streamlit_auth)')
+    st.write('Here is a [demo app repo](https://github.com/gmanchon/streamlit_auth)')
