@@ -86,7 +86,7 @@ st.sidebar.write("# About")
 st.sidebar.info("""
 This app was created using [Streamlit](https://streamlit.io/)
 
-The code of the page is visible [here](https://github.com/gmanchon/streamlit). If you are just getting started, an older yet simpler version of the code is available [here](https://github.com/gmanchon/streamlit/tree/main)
+The code of the page is visible [here](https://github.com/lewagon/streamlit). If you are just getting started, an older yet simpler version of the code is available [here](https://github.com/gmanchon/streamlit/tree/main)
 """)
 
 # show page load duration in sidebar
