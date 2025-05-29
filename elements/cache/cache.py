@@ -17,7 +17,7 @@ def run():
         the dataset will be reloaded everytime the user uses a control. \
         How to deal with that?
 
-        The `@st.cache` decorator allows the functions on which it is placed \
+        The `@st.cache_data` decorator allows the functions on which it is placed \
         to be executed only once and its result cached
 
         In the example below, both dataframes are created with random values. \
@@ -36,7 +36,7 @@ def run():
                     np.random.randn(3, 3),
                     columns=['a', 'b', 'c'])
 
-        @st.cache
+        @st.cache_data
         def get_cached_data():
             return get_data()
 

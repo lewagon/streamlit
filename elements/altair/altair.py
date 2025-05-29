@@ -11,7 +11,7 @@ def run():
 
     with st.echo():
 
-        @st.cache
+        @st.cache_data
         def get_altair_data():
 
             return pd.DataFrame(

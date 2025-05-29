@@ -20,7 +20,7 @@ def run():
             import requests
             from bs4 import BeautifulSoup
 
-            @st.cache
+            @st.cache_data
             def get_scraping_data():
 
                 url = 'https://www.iubenda.com/privacy-policy/7967062/legal'
@@ -34,4 +34,3 @@ def run():
             content = get_scraping_data()
 
             st.write(f'<div id="iubenda_policy" class="iubenda_fixed_policy">{content}</div>', unsafe_allow_html=True)
-

@@ -14,7 +14,7 @@ def run():
 
         import base64
 
-        @st.cache
+        @st.cache_data
         def load_image(path):
             with open(path, 'rb') as f:
                 data = f.read()
