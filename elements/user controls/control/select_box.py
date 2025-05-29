@@ -13,7 +13,7 @@ def run():
 
     with st.echo():
 
-        @st.cache
+        @st.cache_data
         def get_select_box_data():
 
             return pd.DataFrame({

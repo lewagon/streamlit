@@ -13,7 +13,7 @@ def run():
 
     with st.echo():
 
-        @st.cache
+        @st.cache_data
         def get_area_chart_data():
 
             return pd.DataFrame(
