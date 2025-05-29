@@ -1,4 +1,4 @@
-
+import numpy as np
 import streamlit as st
 
 
@@ -8,11 +8,13 @@ def run():
 
         import matplotlib.pyplot as plt
 
-        from scipy import misc
+        x = np.arange(-1,1.00001,0.1)
+        y = x**3
 
         fig, ax = plt.subplots()
 
-        face = misc.face(gray=True)
-        ax.imshow(face, cmap='gray')
+        ax.plot(x, y, label="A curve")
+        ax.plot(x, x, label="Identity function")
+        ax.legend()
 
         st.pyplot(fig)
