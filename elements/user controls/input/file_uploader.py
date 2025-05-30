@@ -1,4 +1,4 @@
-
+import pandas as pd
 import streamlit as st
 
 
@@ -9,8 +9,6 @@ def title():
 def run():
 
     with st.echo():
-
-        st.set_option('deprecation.showfileUploaderEncoding', False)
 
         uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
 
